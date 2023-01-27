@@ -98,8 +98,8 @@
 /*ex10*/
 
 .ex-10-icon {
-   animation: spin 3s infinite;
-   animation-timing-function: linear;
+   animation: spin 3s linear infinite;
+  
 
 }
 
@@ -108,3 +108,18 @@
     to{transform: rotate(360deg)}
 }
 
+
+/*ex11*/
+
+.ex-11-icon:hover {
+    animation: spin2 1s ease-in 2;
+    animation-direction: alternate; 
+   
+ 
+ }
+ 
+ @keyframes spin2 {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(270deg)}
+
+ }
