@@ -111,15 +111,13 @@
 
 /*ex11*/
 
-.ex-11-icon:hover {
-    animation: spin2 1s ease-in 2;
-    animation-direction: alternate; 
-   
- 
- }
- 
- @keyframes spin2 {
-    from{transform: rotate(0deg)}
-    to{transform: rotate(270deg)}
 
+.ex-11-icon:hover {
+    animation: spin2 1s linear 1;
+}
+
+@keyframes spin2 {
+   
+    80% {transform: rotate(270deg)}
+    
  }
