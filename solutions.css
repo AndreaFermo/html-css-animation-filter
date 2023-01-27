@@ -128,7 +128,7 @@
  .ex-12-button:hover .ex-12-top-white{
 
   
-   animation: muovi linear 3s infinite;
+   animation: muovi linear 1s 1;
  }
 
  @keyframes muovi {
@@ -138,7 +138,7 @@
  }
 
  .ex-12-button:hover .ex-12-bottom-white {
-    animation: muovisotto linear 3s infinite;
+    animation: muovisotto linear 1s 1;
   }
  
   @keyframes muovisotto {
@@ -147,3 +147,32 @@
     50% {right: calc(90% - 60px); bottom: -10px;}
   }
 
+/*ex13*/
+
+.ex-13-button:hover .ex-13-top-white {
+
+    animation: girotondo linear 1s 2;
+
+}
+
+@keyframes girotondo {
+    
+    0% {left: 10%; top: -10px;}
+    50% {left: 100%; top: -10px;}
+    70% {left: 100%; top: calc(100% - 10px); }
+    100% {left: calc(80% - 60px); top: calc(100% - 10px);}
+  }
+
+  .ex-13-button:hover .ex-13-bottom-white {
+
+    animation: girotondosotto linear 1s 2;
+
+}
+
+@keyframes girotondosotto {
+    
+    0% {right: 20%; bottom: -10px;}
+    50% {right: 80%; bottom: -10px;}
+    70% {right: 80%; bottom: calc(100% - 10px); }
+    100% {right: calc(90% - 60px); bottom: calc(100% - 10px);}
+  }
